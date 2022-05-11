@@ -1,0 +1,31 @@
+{
+    "name": "sunilyadav/generator",
+    "description": "This Package is used to generate csv file of products of various platforms.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Sunilyadav\\Generator\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sunil Yadav",
+            "email": "thesunilyadav2001@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.3|^8.0"
+    },
+    "require-dev": {
+        "laravel/framework": "^5.8"
+    },
+    "extra": {
+        "laravel": {
+            "providers" :[
+                "Sunilyadav\\Generator\\GeneratorServiceProvider"
+            ]
+        }
+    }
+}

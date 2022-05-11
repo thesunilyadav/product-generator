@@ -1,0 +1,2 @@
+
+Route::get('/{platform}/get-products', [\App\Http\Controllers\ProductCsvController::class, 'index']);
