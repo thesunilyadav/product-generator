@@ -20,7 +20,7 @@ class ProductGenerator
     {
         $status = $this->init($platform);
         if($status){
-            $totalProducts = $nOfProducts > 10000 ? 10000 : $nOfProducts;
+            $totalProducts = $nOfProducts > 100000 ? 100000 : ( $nOfProducts <= 0 ? 1 : $nOfProducts );
             
             return $this->platformGenerator->getFile($totalProducts);
         }
