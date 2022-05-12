@@ -56,6 +56,6 @@ class ProductGenerator
      */
     public function resolvePlatform($platform)
     {
-        return in_array(strtolower($platform),['shopify', 'bigcommerce']);
+        return in_array(strtolower($platform),['shopify']);
     }
 }
