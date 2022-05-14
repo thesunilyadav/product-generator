@@ -18,6 +18,7 @@ class ProductGenerator
      */
     public function generateCsv($platform, $nOfProducts = 10)
     {
+        ini_set('max_execution_time', 35);
         $status = $this->init($platform);
         if($status){
             $totalProducts = $nOfProducts > 50000 ? 50000 : ( $nOfProducts <= 0 ? 1 : $nOfProducts );
@@ -56,6 +57,6 @@ class ProductGenerator
      */
     public function resolvePlatform($platform)
     {
-        return in_array(strtolower($platform),['shopify']);
+        return in_array(strtolower($platform),['shopify', 'bigcommerce']);
     }
 }
